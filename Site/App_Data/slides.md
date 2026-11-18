@@ -1,43 +1,41 @@
 ---
-title: RemObjects Infrastructure
+title: ESP Slides
 layout: cover
+duration: 3m
+slideDuration: 30s
 ---
 
-# RemObjects Infrastructure
+# ESP Slides
 
-Shared building blocks for Elements applications and services
+Present from a Markdown file.
+
+---
+duration: 1m
+---
+
+# Write and present
+
+<v-clicks>
+
+- Separate slides with `---`.
+- Save in your editor to refresh the preview.
+- Open **Presentation View** for a separate audience window.
+
+</v-clicks>
+
+<!--
+These notes are visible in the presenter window.
+-->
 
 ---
 
-# Shared code and integrations
-
-| Component | Role |
-| --- | --- |
-| Infrastructure | Shared application and service code |
-| Infrastructure.AI | Model providers and AI integrations |
-| Infrastructure.AWS | AWS service integrations |
-| Infrastructure.DataAbstract | Data Abstract integrations |
-
----
-
-# From Markdown to slides
+# Code and diagrams
 
 ```oxygene
-var lOptions := MarkdownOptions.GitHub;
-var lHtml := Markdown.ToHtml(lSource, lOptions);
+writeLn("Hello, world!");
 ```
 
 ```mermaid
 flowchart LR
-  Deck["slides.md"] --> Render["Elements.Markdown"]
-  Render --> Serve["ESP"]
-  Serve --> Browser["Browser"]
+  Markdown --> ESP --> Browser
 ```
-
----
-layout: section
----
-
-# Edit, save, present
-
-Keep the deck in the folder where you work. When you save the Markdown, ESP Slides refreshes the view and keeps your current slide.

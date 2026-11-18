@@ -14,7 +14,7 @@ you keep the deck.
 open http://localhost:8055/
 ```
 
-With no arguments, the launcher opens the bundled RemObjects Infrastructure
+With no arguments, the launcher opens the bundled
 sample. Pass a port as the second argument to run another deck alongside the
 first. The app runs on the machine that can read the deck and serves the deck
 only to a local browser.
@@ -78,7 +78,7 @@ Set a default in the first front matter block.
 
 ```yaml
 ---
-title: RemObjects Infrastructure
+title: My Presentation
 logo: assets/remobjects.svg
 theme: light
 ---
