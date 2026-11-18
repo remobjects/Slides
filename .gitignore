@@ -1,0 +1,6 @@
+/Bin/
+/Site/Bin/
+/Site/obj/
+.DS_Store
+*.fire.cache
+*.fire.user
